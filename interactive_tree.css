@@ -1,0 +1,74 @@
+circle {
+  cursor: pointer;
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+text {
+	font-size:10px;
+}
+
+path.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+#sp_1 {
+    /* box-sizing: border-box;
+    -moz-box-align: end;
+width: 60%;
+border: solid #5B6DCD 10px;
+padding: 5px; */
+    text-align: left;
+    position: absolute;
+    width: 300px;
+    /* border: solid red 1px; */
+    border: solid #5B6DCD 1px;
+    height: 460px;
+    padding: 10px;
+
+    right: 50px;
+    top: 10px; 
+}
+
+#title {
+    box-sizing: border-box;
+    position: absolute;
+    /* vertical-align: bottom; */
+    width: 67%;
+    border: solid #5B6DCD 1px;
+    padding: 5px;
+    /* text-align: center; */
+
+}
+
+#title h4 {
+    text-align: center;
+    margin: 0;
+    /* position: absolute; */
+    bottom: 0; 
+}
+
+/* 
+#sp_2 {
+
+    top: 350px;
+} */
+
+#sp_1 h4 {
+    text-align: center;
+    margin: 0;
+}
+
+#chart {
+    width: 1110px;
+    position: relative;
+    margin: 0 auto;
+    border: 1px black solid;
+    text-align: left;
+    height: 500px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
