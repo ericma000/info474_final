@@ -128,3 +128,25 @@ img {
 
     opacity: 0;
 }
+
+#com_ances {
+    border: solid 1px blue;
+    position: absolute;
+
+    width: 200px;
+    height: 100px;
+
+    opacity: 0;
+
+    top: 25px;
+    left: 25px;
+    padding: 1rem;
+}
+
+#com_ances h5 {
+    font-size: 1.5rem;
+}
+
+#com_ances h6 {
+    font-size: 0.9rem;
+}
