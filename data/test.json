@@ -1,0 +1,15 @@
+
+{
+  "name": "Level 1",
+  "radius": 5,
+  "children": [
+    { 
+     	"name": "Level 2: A",
+     	"radius": 10
+    },
+    { 
+    	"name": "Level 2: B",
+    	"radius": 10
+    }
+  ]
+}
