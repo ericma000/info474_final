@@ -42,6 +42,7 @@
 					     	"genes": 19890,
 					     	"gene_rad": 40,
 					     	"parents": 18,
+					     	"image": "cow.png",
 					     	"color": "red",
 					     	"value": 25,
 					     	"radius": 10
@@ -54,6 +55,7 @@
 					    	"gene_rad": 35,
 					    	"parents": 18,
 					    	"color": "red",
+					    	"image": "chimp.jpg",
 					    	"value": 26,
 					    	"radius": 10			    		
 					    }
@@ -73,6 +75,7 @@
 					     	"gene_rad": 39,
 					     	"color": "red",
 					     	"parents": 19,
+					     	"image": "turtle.jpg",
 					     	"value": 27,
 					     	"radius": 10
 					    },
@@ -84,6 +87,7 @@
 					    	"gene_rad": 33,
 					    	"parents": 19,
 					    	"color": "red",
+					    	"image": "chicken.png",
 					    	"value": 28,
 					    	"radius": 10		
 					    }
@@ -109,6 +113,7 @@
 					    	"parents": 20,
 					    	"description": "The western clawed frog is an amphibian. This group of vertebrate animals spends its early life in the water, using fins to swim and gills to breathe. During metamorphosis, it grows legs and lungs, allowing it to live comfortably on land.",
 					    	"genes": 18293,
+					    	"image": "frog.png",
 					    	"gene_rad": 36,
 					    	"color": "red",
 					    	"value": 29,
@@ -145,6 +150,7 @@
 					    	"description": "One of many flies that live on fruit, D. mela-nogaster is a common household pest. A subject of genetics research since the early 1900s, this tiny fly has helped scientists understand volumes about how genes influence development, behavior, and other traits.",
 					    	"genes": 14506,
 					    	"gene_rad": 30,
+					    	"image": "fruitfly.png",
 					    	"color": "red",
 					    	"value": 30,
 					    	"radius": 10		    	
@@ -187,6 +193,7 @@
 					    	"description": "This food plant was domesticated from its wild relative thousands of years ago in Mexico. It can reproduce using flowers, but new plants can also grow from the eyes of its underground, starchy tubers.",
 					    	"genes": 41796,
 					    	"gene_rad": 55,
+					    	"image": "potato.png",
 					    	"color": "green",
 					    	"value": 31,
 					    	"radius": 10		    	
@@ -222,6 +229,7 @@
 					    	"genes": 1782,
 					    	"gene_rad": 25,
 					    	"parents": 23,
+					    	"image": "moss.png",
 					    	"color": "green",
 					    	"value": 32,
 					    	"radius": 10									    	
@@ -273,6 +281,7 @@
 					    	"description": "Like all archaea, M. Jannaschii is a microscopic, single-celled organism. This species lives miles under the surface of the ocean, near hydrothermal vents.",
 					    	"genes": 32775,
 					    	"gene_rad": 50,
+					    	"image": "m_jan.png",
 					    	"color": "purple",
 					    	"value": 33,
 					    	"radius": 10			    	

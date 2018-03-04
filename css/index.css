@@ -109,10 +109,19 @@ body {
     cursor: pointer;
 }
 
-img {
-    width: 10%;
-    border-radius: 50%;
+#image_tooltip {
+    position: absolute;
+    border: solid 1px black;
+    padding: 0.3rem;
+    border-radius: 3px;
+
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/cow.png');
+    background-size: contain;
+    opacity: 0;
 }
+
 
 .related_genes {
     position: absolute;
@@ -130,7 +139,7 @@ img {
 }
 
 #com_ances {
-    border: solid 1px blue;
+    border: solid 1px red;
     position: absolute;
 
     width: 200px;

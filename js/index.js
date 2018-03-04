@@ -65,7 +65,39 @@
 
         node.append('circle')
             .attr('r', function(d) {return d.radius})
-            .attr('fill', 'steelblue');
+            .attr('fill', 'steelblue')
+            .on('mouseover', function(d) {
+                d3.select('#image_tooltip')
+                    .transition()
+                    .duration(50)
+                    .style('left', (d3.event.pageX - 70) + 'px')
+                    .style('top', (d3.event.pageY - 260) + 'px')
+                    .style('background-image', 'url("./img/' + d.image + '")')
+                    .style('opacity', 1)                    
+            })
+            .on('mouseout', function(d) {
+                d3.select('#image_tooltip')
+                    .transition()
+                    .duration(100)
+                    .style('opacity', 0)
+            })
+
+
+
+            // .on("mouseover", function(d) {      
+            //     div.transition()        
+            //         .duration(200)      
+            //         .style("opacity", .9);      
+            //     div .html(formatTime(d.date) + "<br/>"  + d.close)  
+            //         .style("left", (d3.event.pageX) + "px")     
+            //         .style("top", (d3.event.pageY - 28) + "px");    
+            //     })                  
+            // .on("mouseout", function(d) {       
+            //     div.transition()        
+            //         .duration(500)      
+            //         .style("opacity", 0);   
+            // });
+
 
         node.append('text')
             .text(function(d) { return d.name;})
@@ -410,6 +442,8 @@
                     return d.target === node;
                 })
                 .style("stroke", color)
+                .style('stroke-width', '5px')
+                .style('opacity', 0.8);
         } else {
             d3.selectAll(".link")
                 .filter(function(d) {
@@ -418,7 +452,9 @@
                         return d;
                     }
                 })
-                .style("stroke", color);
+                .style("stroke", color)
+                .style('stroke-width', '5px ')
+                .style('opacity', 0.8);
 
             highlight_link(source_node, source_node.depth, color);
         }
@@ -429,13 +465,19 @@
         var source_node;
         if (depth == 0) {
             d3.selectAll('.link')
-                .style('stroke', 'black');
+                .style("stroke", 'black')
+                .style('stroke-width', '1px')
+                .style('opacity', 1);
+
         } else if (depth == 1) {
             d3.selectAll(".link")
                 .filter(function(d) {
                     return d.target === node;
                 })
                 .style("stroke", 'black')
+                .style('stroke-width', '1px')
+                .style('opacity', 1);
+
         } else {
             d3.selectAll(".link")
                 .filter(function(d) {
@@ -444,7 +486,9 @@
                         return d;
                     }
                 })
-                .style("stroke", 'black');
+                .style("stroke", 'black')
+                .style('stroke-width', '1px')
+                .style('opacity', 1);
 
             unhighlight_link(source_node, source_node.depth);
         }
