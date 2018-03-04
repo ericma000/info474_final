@@ -13,12 +13,17 @@
     <!-- <div id="chart"></div> -->
     <div id="chart">
         <div class="species_description" id="sp_1">
-                <h4></h4>
+                <h4>Which of the six circles on the tree corresponds to the most recent ancestor of a [animal1] and a [animal2]? </h4>
                 <p></p>
         </div>
-        <div class="instructions" id="title">
-            <h4>"hjhjh" </h4>
+        <div class="species_description" id="sp_2">
+            <h4></h4>
+            <p></p>
+            
         </div>
+        <!-- <div class="instructions" id="title">
+            <h4>"hjhjh" </h4>
+        </div> -->
         
         <!-- <div class="species_description" id="sp_2">
             <h4></h4>
@@ -78,9 +83,14 @@ function update(source) {
     //   .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; })
       .attr('r', function(d) {return d.radius})
       .attr('fill', 'steelblue')
-      .on("click", function(d) {                
-                    $('#sp_1 h4').text(d.answer);
-                    $('#sp_1 p').text(d.name);})
+      .on("click", function(d) {      
+            if ($('#sp_2 h4').text().length > 0){
+                                $("#sp_2").text("");  }})
+      .on("click", function(d) {      
+                    //$('#sp_1 p').text(d.name);  
+                    $('#sp_2 h4').text(d.answer);
+                    $('#sp_2 p').text(d.explain);                          
+                })
 	
 	nodeEnter.append("svg:text")
       	.attr("x", function(d) { return d._children ? -8 : 8; })
@@ -93,50 +103,37 @@ function update(source) {
 		.attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
       	.style("opacity", 1)
       .select("circle")
-    	//.attr("cx", function(d) { return d.x; })
-		//.attr("cy", function(d) { return d.y; })
         .style("fill", "lightsteelblue");
       
   // Update the links…
   var link = vis.selectAll("path.link")
       .data(tree.links(nodes), function(d) { return d.target.id; });
 
-//   // Enter any new links at the parent's previous position.
-  link.enter().insert("svg:path", "g")
-      .attr("class", "link")
-      .attr("d", function(d) {
-        var o = {x: source.x0, y: source.y0};
-        return diagonal({source: o, target: o});
-      })
-    .transition()
-      .duration(duration)
-      .attr("d", diagonal);
+        //   // Enter any new links at the parent's previous position.
+        link.enter().insert("svg:path", "g")
+            .attr("class", "link")
+            .attr("d", function(d) {
+                var o = {x: source.x0, y: source.y0};
+                return diagonal({source: o, target: o});
+            })
+            .transition()
+            .duration(duration)
+            .attr("d", diagonal);
 
+        // Transition links to their new position.
+        link.transition()
+            .duration(duration)
+            .attr("d", diagonal);
 
-  // Transition links to their new position.
-  link.transition()
-      .duration(duration)
-      .attr("d", diagonal);
-
-  // Transition exiting nodes to the parent's new position.
-  link.exit().transition()
-      .duration(duration)
-      .attr("d", function(d) {
-        var o = {x: source.x, y: source.y};
-        return diagonal({source: o, target: o});
-      })
-      .remove();
-
-  // Stash the old positions for transition.
-//   nodes.forEach(function(d) {
-//     d.x0 = d.x;
-//     d.y0 = d.y;
-//   });
+        // Transition exiting nodes to the parent's new position.
+        link.exit().transition()
+            .duration(duration)
+            .attr("d", function(d) {
+                var o = {x: source.x, y: source.y};
+                return diagonal({source: o, target: o});
+            })
+            .remove();
 }
-
-d3.select(self.frameElement).style("height", "410px");
-
-
     </script>
   </body>
 </html>

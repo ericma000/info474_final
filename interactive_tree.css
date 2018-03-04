@@ -26,11 +26,27 @@ padding: 5px; */
     width: 300px;
     /* border: solid red 1px; */
     border: solid #5B6DCD 1px;
-    height: 460px;
+    height: 94px;
     padding: 10px;
 
     right: 50px;
     top: 10px; 
+}
+
+#sp_2 {
+    /* box-sizing: border-box;
+    -moz-box-align: end;
+width: 60%;
+border: solid #5B6DCD 10px;
+padding: 5px; */
+    text-align: left;
+    position: absolute;
+    width: 300px;
+    border: solid blue 1px;
+    height: 345px;
+    padding: 10px;
+    right: 50px;
+    top:25%; 
 }
 
 #title {
@@ -58,6 +74,12 @@ padding: 5px; */
 } */
 
 #sp_1 h4 {
+    text-align: center;
+    margin: 0;
+    font-size: 120%;
+}
+
+#sp_2 h4 {
     text-align: center;
     margin: 0;
 }
