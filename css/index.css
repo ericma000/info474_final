@@ -20,11 +20,11 @@ body {
 }
 
 #visualization_1, #visualization_2 {
-    width: 1110px;
+    width: 850px;
     margin: 0 auto;
     border: 1px black solid;
     text-align: center;
-    height: 600px;
+    height: 450px;
     margin-bottom: 2rem;
     margin-top: 1rem;
 }
@@ -55,7 +55,7 @@ body {
 }
 
 .species_description h6, img{
-    font-size: 1.5rem;
+    font-size: 1rem;
     float: right;
 }
 
@@ -84,12 +84,12 @@ body {
 #sp_1, #sp_2 {
     text-align: left;
     position: absolute;
-    width: 400px;
+    width: 330px;
     border: solid red 1px;
-    height: 210px;
-    padding: 1rem;
+    height: 170px;
+    padding: 0.6rem;
 
-    left: 665px;
+    left: 505px;
 }
 
 #sp_1 {
@@ -103,6 +103,11 @@ body {
 }
 
 #sp_1 h4, #sp_2 h4 {
+    font-size: 1.25rem;
+}
+
+#sp_1 p, #sp_2 p {
+    font-size: 0.85rem;
 }
 
 .node {
@@ -125,13 +130,13 @@ body {
 
 .related_genes {
     position: absolute;
-    top: 290px;
-    left: 725px;
+    top: 215px;
+    left: 550px;
 }
 
 #rg_right {
-    left: 960px;
-    top: 280px;
+    left: 730px;
+    top: 200px;
     width: 70px;
     height: 100px;
 
@@ -142,10 +147,10 @@ body {
     border: solid 1px red;
     position: absolute;
 
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 75px;
 
-    opacity: 0;
+    opacity: 1;
 
     top: 25px;
     left: 25px;
@@ -153,7 +158,7 @@ body {
 }
 
 #com_ances h5 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 #com_ances h6 {
