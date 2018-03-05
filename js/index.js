@@ -208,7 +208,7 @@ $(document).ready(function() {
                 // append circles
                 svg.append('circle')
                     .attr('id', 'species_1')
-                    .attr('cx', '645px')
+                    .attr('cx', '653px')
                     .attr('cy', '225px')
                     .attr('r', 0)
                     .transition()
@@ -219,7 +219,7 @@ $(document).ready(function() {
                 
                 svg.append('circle')
                     .attr('id', 'species_2')
-                    .attr('cx', '686px')
+                    .attr('cx', '678px')
                     .attr('cy', '225px')
                     .attr('r', 0)
                     .transition()

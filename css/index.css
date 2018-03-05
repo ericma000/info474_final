@@ -32,8 +32,8 @@ body {
 #visualization_1, #visualization_2, #visualization_3 {
     width: 850px;
     margin: 0 auto;
-    border: 1px black solid;
-    text-align: center;
+/*    border: 1px black solid;
+*/    text-align: center;
     height: 450px;
     margin-bottom: 2rem;
     margin-top: 1rem;
@@ -96,7 +96,7 @@ body {
     text-align: left;
     position: absolute;
     width: 330px;
-    border: solid red 1px;
+    border: solid black 0.5px;
     height: 170px;
     padding: 0.6rem;
 
@@ -154,7 +154,7 @@ body {
 }
 
 #com_ances {
-    border: solid 1px red;
+    border: solid 0.5px black;
     position: absolute;
 
     width: 150px;
