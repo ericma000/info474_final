@@ -68,7 +68,7 @@ $(document).ready(function() {
                     .transition()
                     .duration(50)
                     .style('left', (d3.event.pageX - 200) + 'px')
-                    .style('top', (d3.event.pageY - 260) + 'px')
+                    .style('top', (d3.event.pageY - 250) + 'px')
                     .style('background-image', 'url("./img/' + d.image + '")')
                     .style('opacity', 1)                    
             })

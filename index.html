@@ -18,18 +18,20 @@
     <!-- import css -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/vis2.css">
     <link rel="stylesheet" type="text/css" href="./css/vis3.css">
 
     <script src="./js/index.js"></script>
     <script type="text/javascript" src="./js/vis3.js"></script>
+    <script type="text/javascript" src="./js/vis2.js"></script>
 </head>
 <body id="main" class="container">
 
     
     <div id="header">
-        <h1 class="title">Phylogenetic Tree</h1>
-        <h5 style="color: red">INSERT A 1 SENTENCE DESCRIPTION OF THIS PROJECT</h5>
+        <h1 class="title">Phylogenetic Tree</h1>      
         <h7>By: Eric Ma, Rebecca Ta, Saralyn Santos</h7>
+        <h5>This explorable explanation teaches users how to read phylogenetic trees, a type of diagram common in biology classes.</h5>
     </div>
 
     <div id="visualization_1">
@@ -84,11 +86,8 @@
             <h3>What is a Phylogenetic Tree?</h3>
             <div class="flex_cont">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec suscipit quam. Phasellus efficitur aliquam elit, a finibus mi tristique id. Aenean hendrerit, nunc bibendum porttitor rhoncus, sem mauris bibendum ligula, sollicitudin cursus ex tortor a justo. Quisque nec nisl a sapien laoreet pellentesque. Fusce eu ultricies diam. Sed vitae eros dolor. Mauris eu porta purus. Duis id velit ut ipsum consequat pellentesque eu at nulla.
+                    A <b>phylogenetic tree</b> is a visual representation of the branching patterns of evolution. Through a phylogenetic tree, readers can trace the evolutionary relationships between various organisms.
                 </p>
-                <div id="sec1_img">
-                    <div id="sec1_img_1"></div>
-                </div>
             </div>
         </div>
 
@@ -96,7 +95,19 @@
 
         <div id="section_2" class="topics">
             <h3>How to Read a Tree &amp; Anatomy of a Tree</h3>
-            <div id="visualization_2"></div>
+            <div id="visualization_2">
+                <div id="vis2_description">
+                    <h4></h4>
+                    <p></p>
+                </div>
+
+
+                <div id="sister"></div>
+                <div id="node"></div>
+                <div id="root"></div>
+                <div id="terminal"></div>
+
+            </div>
             <div id="sec2_subhead_1">
                 <h4>Understanding Evolutionary Relationships</h4>
                 <div class="flex_cont">
@@ -136,7 +147,7 @@
         <div id="visualization_3">
             <div id="chart">
                 <div class="species_description" id="sp_3_1">
-                        <h4>Which of the six circles on the tree corresponds to the most recent ancestor of a [animal1] and a [animal2]? </h4>
+                        <h4>Which of the six circles on the tree corresponds to the most recent ancestor of a <b>Humpback Whale</b> and a <b>Goat</b>? </h4>
                         <p></p>
                 </div>
                 <div class="species_description" id="sp_3_2">
