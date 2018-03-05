@@ -34,7 +34,7 @@
 }
 
 
-#root, #node, #terminal {
+#root, #node, #terminal, .chara_2 {
 	border-radius: 15px;
 
 	background-color: orange;
@@ -61,4 +61,19 @@
 	width: 40px;
 	bottom: 73px;
 	left: 315.5px;
+}
+
+.chara_2 {
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+
+}
+
+.chara {
+	position: absolute;
+	border: solid 1px black;
+	width: 20px;
+	height: 4px;
+	background-color: black;
 }

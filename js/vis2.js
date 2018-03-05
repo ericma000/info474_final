@@ -5,7 +5,8 @@ $(function() {
         {"term": "Root", "description" : "The root of a phylogenetic tree represents a series of ancestors leading up to the most recent common ancestor of all the species represented in that tree. "},
         {"term": "Node", "description" : "A node is a branch point that represents a divergence event where a lineage splits into two different descendant groups."},
         {"term": "Sister Groups", "description" : "Sister groups are two monophyletic groups that are each other’s closest relatives."},
-        {"term": "Terminal Node", "description" : "A terminal node is a node that appears as a branch tip on a phylogenetic tree"}
+        {"term": "Terminal Node", "description" : "A terminal node is a node that appears as a branch tip on a phylogenetic tree"},
+        {"term": "Character", "description" : "A character is a recognizable feature of an organism."}
     ]
 
     var state = 0;
@@ -148,9 +149,52 @@ $(function() {
 
             })
 
+        svg.append('circle')
+            .attr('class', 'vis2_explanation')
+            .attr('r', '15px')
+            .attr('fill', 'grey')
+            .style('opacity', 0.5)
+            .attr('cx', '280')
+            .attr('cy', '225px')
+            .on('click', function() {
+                if (state == 0) {
+                    state = 1;
+                    $('#visualization_2 h4').text(descrip_data[4].term);
+                    $('#visualization_2 p').text(descrip_data[4].description);
+                    $('.chara_2').css('opacity', 0.5);
+                } else {
+                    state = 0;
+                    $('#visualization_2 h4').empty();
+                    $('#visualization_2 p').empty()
+                    $('.chara_2').css('opacity', 0);
+                }
+            })    
+
+        // var c = $('div').attr('class', 'bob'); 
+        // console.log(c);
+
+        createCharacters('chara', 310, 180);
+
+        createCharacters('chara', 297, 290);
+
+
+
+        createCharacters('chara_2', 291, 277);
+        createCharacters('chara_2', 305, 166);
+        // test.css({'position': 'aboslute', 'width': '10px', 'border': 'solid 1px black', 'height': '50px'})
+        // svg.append(test);
 
  	 })
+    
+    function createCharacters(name, x, y) {
+        var t = $('<div class="' + name + '"></div>');
+        t.css('left', x + 'px');
+        t.css('top', y + 'px');
+        $('#visualization_2').append(t);
 
+
+
+    }
 
 
 
