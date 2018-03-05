@@ -50,7 +50,7 @@ $(document).ready(function() {
         var nodes = tree.nodes(data);     
         var links = tree.links(nodes);
 
-        var node = svg.selectAll('.node')
+        var node = svg.selectAll('#chart .node')
             .data(nodes)
             .enter()
             .append('g')

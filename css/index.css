@@ -13,13 +13,13 @@ body {
 }
 */
 #description {
-    width: 1110px   ;
+    width: 850px   ;
     vertical-align: top;
     margin: 0 auto;
 
 }
 
-#visualization_1, #visualization_2 {
+#visualization_1, #visualization_2, #visualization_3 {
     width: 850px;
     margin: 0 auto;
     border: 1px black solid;
@@ -32,9 +32,7 @@ body {
 #visualization_1 {
     position: relative;
 }
-#visualization_2 {
-	width: 1110px;
-}
+
 
 
     
@@ -150,7 +148,7 @@ body {
     width: 150px;
     height: 75px;
 
-    opacity: 1;
+    opacity: 0;
 
     top: 25px;
     left: 25px;
