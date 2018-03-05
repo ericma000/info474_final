@@ -36,11 +36,11 @@ function update(source) {
   //var links = tree.links(nodes);
 
   // Update the nodes…
-    var node = vis.selectAll("g.node")
+    var node = vis.selectAll(".vis3_node")
       .data(nodes, function(d) { return d.id || (d.id = ++i); });
 
   var nodeEnter = node.enter().append("svg:g")
-      .attr("class", "node")
+      .attr("class", "vis3_node")
         .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; });
         
   // Enter any new nodes at the parent's previous position. 
