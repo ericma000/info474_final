@@ -27,6 +27,7 @@ var vis = d3.select("#chart").append("svg:svg")
 d3.json("./data/math_map_compact.json", function(json) {
   json.x0 = 800;
   json.y0 = 0;
+  console.log(json);
   update(root = json);
 });
 

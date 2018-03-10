@@ -1,64 +1,17 @@
-
-{
-  "name": "",
-  "radius": 0,
-  "terminology": "root",
-  "children": [
-    { 
-     	"name": "",
-     	"radius": 0,
-     	"children": [
-	    { 
-	     	"name": "",
-	     	"radius": 0,
-	     	"children": [
-	     		{
-	     			"name": "A",
-			     	"radius": 10
-	     		}
-	      ]
-   		},
-   		{
-   			"name": "",
-	     	"radius": 0,
-	     	"children": [
-	     		{
-	     			"name": "B",
-			     	"radius": 10
-	     		},
-	     		{
-	     			"name": "C",
-     				"radius": 10
-	     		}
-
-	      ]
-   		}
-   	  ]
-    },
-    { 
-    	"name": "",
-    	"radius": 0,
-    	"value": 3,
-    	"children": [
-	    { 
-	    	"name": "",
-	    	"radius": 0,
-	    	"value": 5,
-	    	"children": [
-	    	{
-	    		"name": "D",
-		    	"radius": 10,
-		    	"value": 5
-	    	},
-	    	{
-	    		"name": "E",
-		    	"radius": 10,
-		    	"value": 5
-	    	}
-
-	      ]
-	    }
-      ]
-    }
-  ]
-}
+{"name": "","radius": 0,"terminology":"root","children": [
+    {"name": "","radius": 0,"terminology": "","children": [
+	    {"name": "","radius": 0,"terminology": "","children": [
+	    	{"name": "A","radius": 10,"terminology": "","children": []}
+      	]},
+   		{"name": "","radius": 0,"terminology": "","children": [
+     			{"name": "B","radius": 10,"terminology": "","children": []},
+	     		{"name": "C","radius": 10,"terminology": "","children": []}
+      	]}
+   	]},
+    {"name": "","radius": 0,"terminology": "","children": [
+	    {"name": "","radius": 0,"terminology": "","children": [
+	    	{"name": "D","radius": 10,"terminology": "","children": []},
+	    	{"name": "E","radius": 10,"terminology": "","children": []}
+        ]}
+    ]}
+]}
